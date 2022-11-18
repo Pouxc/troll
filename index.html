@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="css/Fichier.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)"/>
+        <link href="css/Fichier_2.css" rel="stylesheet" type="text/css" media="screen and (max-width: 1000px)"/> 
+	</head>
+		
+		<script type="text/javascript" src="js/script.js"></script>
+		
+	<body>
+       
+
+<div id="header">
+     <a id="consigne">TROLL QUEST</a>
+            <a id="niveau">0000</a>
+            <a><img src="image/restart.png" onclick="refresh();" id="icone_restart"></a>
+</div>
+        
+        
+ <div id="bouton_play">
+        <a> <img  id="bouton_play_1" src="Image/Play.png" onclick="Play('divbouton', 'bouton_play', '0001', 'QUEL EST TON PRENOM ?');"></a>
+         <a><input onclick="afficher_aide();" id="bouton_help" type="button" value="INSTRUCTIONS"></a>
+    </div>
+        
+        
+        
+        
+<div id="menu_aide" class="display_none">
+    <a><img class="img_noir" src="image/noir.jpg"></a>
+    
+    <a id="txt_1">Règles du jeu</a>
+    <a id="txt_2">(Très difficiles donc soyez attentifs)</a>
+    <a id="txt_3" >✱ Répondre aux questions</a>
+    <a id="img_regles"><img src="image/Troll_onepunchman.png"></a>
+    <a id="txt_4"><u>Astuce</u> : ✱ Reflechir est inutile</a> <a id="croix_blanche" onclick="fermer_aide();"><img src="image/croix-blanche-fond-noir.png"></a>
+       
+        </div>    
+        
+        
+<div id='divbouton' class="display_none">
+    <a><input id="bouton_1" class="bouton_nom" type="button" onclick="Play('Troll_1','divbouton', '0001', '...');" value=" Celine Evitable"></a>
+    <a><input id="bouton_2" class="bouton_nom" type="button" onclick="Play('Troll_1','divbouton', '0001', '...');" value="  Paul  Emploi  "></a>
+    <a><input id="bouton_3" class="bouton_nom" type="button" onclick="Play('Troll_1','divbouton', '0001', '...');" value="  Camille Onette"></a>
+    <a><input id="bouton_4" class="bouton_nom" type="button" onclick="Play('Troll_1','divbouton', '0001', '...');" value=" Djamal Digéré"></a>
+        </div>
+
+    
+
+<div id="Troll_1" class="display_none">
+            
+    <a class="commentaire">Quel joli nom !</a>
+    
+    <a> <img id="troll1" src="image/Troll1.png" ></a>
+    <a onclick="Play('jonathan','Troll_1', '0010', 'IL EST JAUNE ET IL ATTEND :')"><img class="Fleche" src="image/Fleche.gif"></a>
+        </div>
+
+
+
+<div id="jonathan"  class="display_none">
+    <a><input id="bouton_1" class="bouton_nom" type="button" onclick="Play('Troll_2','jonathan', '0010', '...');" value="Un citron pas pressé"></a>
+    <a><input onclick="game_over();" id="bouton_2" class="bouton_nom" type="button" value="  Jonathaaaan ! "></a>
+    <a><input onclick="game_over();" id="bouton_3" class="bouton_nom" type="button" value="    Mon pastis     "></a>
+    <a><input onclick="game_over();" id="bouton_4" class="bouton_nom" type="button" value="    Donald Trump     "></a>
+        
+</div>
+
+
+ <div id="Troll_2" class="display_none">
+            
+    <a class="commentaire">Ba Dum Tsss !</a>
+    <a> <img id="Troll_ba_dum_tsss" src="image/ba_dum_tsss.png" ></a>
+    <a onclick="Play('trouve_charlie','Troll_2', '0011', 'CLIQUE SUR CHARLIE');" ><img class="Fleche" src="image/Fleche.gif"></a>
+      
+</div>
+
+
+<div id="trouve_charlie" class="display_none">
+    <a><img id="image_charlie" src="image/image_charlie.jpg"></a>
+    <a><img onclick="Play('Pantalon','trouve_charlie', '0100', 'CHARLIE A UN PANTALON :');" id="charlie_bonhomme" src="image/Charlie_bonhomme.gif"></a>
+    
+</div>
+
+
+<div id="Pantalon" class="display_none">
+    <a><input onclick="game_over();" id="bouton_1" class="bouton_nom" type="button"  value="Bleu Egyptien"></a>
+    <a><input onclick="game_over();" id="bouton_2" class="bouton_nom" type="button" value="Bleu Outre-mer"></a>
+    <a><input onclick="game_over();" id="bouton_3" class="bouton_nom" type="button" value="Bleu Electrique"></a>
+    <a><input onclick="Play('div_bleu','Pantalon', '0100', '...');" id="bouton_4" class="bouton_nom" type="button" value="  Bleu Saphir  "></a>
+</div>   
+
+        
+        
+
+ <div id="div_bleu" class="display_none">
+    <a class="commentaire">Quel beau bleu saphir !</a>
+     
+    <a><img id="image_bleu" src="image/Bleu_saphir_image.png"></a>
+    <a><img onclick="Play('ordinateur','div_bleu', '0101', 'OU SE SITUE LA GAUCHE ?');" src="image/Fleche.gif" class="Fleche"></a>
+</div>
+
+        
+        
+        
+<div id="ordinateur" class="display_none">
+    <a><input onclick="Play('troll_ordinateur','ordinateur', '0101', '...');" id="bouton_1" class="bouton_nom" type="button"  value=" Droite  "></a>
+    <a><input onclick="game_over();"  id="bouton_2" class="bouton_nom" type="button" value="  Gauche  "></a>
+     <a id="troll_refl"> <img src="image/essaie2.png"> </a>   
+        </div>  
+        
+
+        
+<div id="troll_ordinateur" class="display_none">
+        <a class="commentaire">Une blague vieille comme le monde</a>
+        <a><img id="troll_ordinateur_img" src="image/Troll_gauche.png"></a>
+        <a><img onclick="Play('drapeau','troll_ordinateur', '0110', 'CLIQUE SUR LA ROUMANIE');" src="image/Fleche.gif" class="Fleche"></a>
+        
+        </div>
+        
+        
+        
+<div id="drapeau" class="display_none">
+    <a><img onclick="Play('coup_doeil','drapeau', '0110', '...');" id="roumanie_1" src="image/roumanie.png"></a>
+    <a><img onclick="game_over();" id="roumanie_2" src="image/roumanie.png">
+    </a>
+    
+        </div>
+<div id="coup_doeil" class="display_none">
+    <a class="commentaire">Quel bon coup d'oeil !</a>
+    <a><img id="troll_mexicain" src="image/troll_mexicain.png"></a>  
+     <a><img onclick="Play('question_japon','coup_doeil', '0111', 'あなたは独身ですか？');" src="image/Fleche.gif" class="Fleche"></a>
+        </div>
+        
+        
+<div id="question_japon" class="display_none">
+    <a><input onclick="game_over();" id="bouton_1" class="bouton_nom" type="button"  value="   はい   "></a>
+    <a><input onclick="Play('troll_japon','question_japon','0111', '...');" id="bouton_2" class="bouton_nom" type="button" value="ひらがな"></a>
+    <a><input onclick="game_over();" id="bouton_3" class="bouton_nom" type="button" value="  いいえ  "></a>
+    <a><input onclick="game_over();" id="bouton_4" class="bouton_nom" type="button" value=" 食べる "></a>
+</div>   
+        
+        
+<div id="troll_japon" class="display_none" >
+    <a class="commentaire" >私たちは多くのことを笑う！</a>
+    <a><img id="image_japon" src="image/image_basque.png"></a>
+     <a><img onclick="Play('Pain','troll_japon', '1000', 'DE QUEL COTE ES TU ?');" src="image/Fleche.gif" class="Fleche"></a>
+        </div>        
+    
+<div id="Pain" class="display_none">
+    <a><input onclick="game_over();" id="bouton_1" class="bouton_nom" type="button"  value="  Chocolatine  "></a>
+    <a><input onclick="Play('troll_langue','Pain', '1000', '...');" id="bouton_2" class="bouton_nom" type="button" value="Pain au chocolat"></a>
+    <a><img id="img_pain" src="image/petits_pain.png"></a>
+        </div>
+        
+    <div id="troll_langue" class="display_none" >
+      <a class="commentaire">Humm,quelle bonne patisserie! </a>  
+        <a><img id="troll_langue" src="image/troll_langue.PNG"></a>
+        <a><img onclick="Play('Empire','troll_langue', '1001', 'APRES L AN UN IL Y A EU...');" src="image/Fleche.gif" class="Fleche"></a>
+        </div>      
+
+   <div id="Empire" class="display_none">
+    <a><input onclick="game_over();" id="bouton_1" class="bouton_nom" type="button"  value="  L'AN DEUX  "></a>
+    <a><input onclick="Play('suite_empire','Empire', '1001', '...');" id="bouton_2" class="bouton_nom" type="button" value="L'AN PIRE"></a>
+       <a><img id="inconnus" src="image/inconnus.png"></a>
+        </div>
+        
+        
+               
+   <div id="suite_empire" class="display_none" >
+      <a class="commentaire"> Ce n'était pas une blague inconnue...</a>  
+        <a><img id="trollmdr" src="image/troll_mdr.png"> </a>
+         <a><img onclick="Play('arbre','suite_empire', '1010', 'QUEL ARBRE DONNE CETTE FEUILLE ?');" src="image/Fleche.gif" class="Fleche"></a>
+        </div>  
+    
+        
+<div id="arbre" class="display_none">
+    <div><a><img id="feuille" src="image/erable.png"> </a>
+    </div>
+ <div>   <a><input onclick="Play('drapeau2','arbre', '1011', 'QUEL EST LE DRAPEAU DU GHANA?');" id="bouton1" class="boutonnom" type="button"  value="Erable à sucre"></a>
+    <a><input onclick="game_over();" id="bouton2" class="boutonnom" type="button"  value="Erable des Balkans"></a>
+    <a><input onclick="game_over();" id="bouton3" class="boutonnom" type="button"  value="Erable du Japon"></a>
+    <a><input onclick="game_over();" id="bouton4" class="boutonnom" type="button"  value="Erable plane"></a>
+    </div>
+</div>
+
+<div id="drapeau2" class="display_none" >
+<div><a><img id="piege" src="image/piege.png"> </a>
+</div> 
+    <a><img onclick="game_over();" id="drap1" src="image/bolivie.png"> </a>
+    <a><img onclick="Play('troll_dernier','drapeau2', '1011', '...');" id="drap2" src="image/ghana.png"> </a> 
+    <a><img onclick="game_over();" id="drap3" src="image/maurice.png"> </a>
+    <a><img onclick="game_over();" id="drap4" src="image/rep_congo.png"> </a> 
+
+</div>
+        
+ <div id="troll_dernier" class="display_none">
+    <a class="commentaire">Un dernier pour la route</a>
+     
+    <a><img id="troll3" src="image/Yes-meme-rage-face.png"></a>
+    <a><img onclick="Play('click','troll_dernier', '1100', 'TROUVE LE NOMBRE MYSTERE');" src="image/Fleche.gif" class="Fleche"></a>
+        
+</div>
+
+
+<div id="click" class="display_none">
+    <a id="compteur"></a>
+    <a><input type="button" class="bouton_compteur" id="bouton_plus" value="+"></a>
+    <a><input id="champ_texte" type="text" placeholder="Entrer ici un nombre entre 0 et 100"></a>
+    <a><input type="button" class="bouton_compteur" id="bouton_moins" value="-"></a>
+    <a><input type="button" id="bouton_envoyer" value="Envoyer" onclick="nombre_mystère();"></a>
+    <a><input class="display_none" type="button" id="bouton_finish" value="Finish" onclick="Play('menu_won','click', '1100', '...'); " src="image/Fleche.gif"></a>
+    
+       
+</div>
+
+
+<div id="menu_won" class="display_none" >
+<a><img class="img_noir" src="image/noir.jpg"></a>
+   <div id="partie_1"> 
+    
+    <a id="txt_won">YOU WON !</a>
+    <a><img id="img_pleure" src="image/meme_larme_won.png"></a>
+    <a><img id="cadeau" src="image/cadeau.png" onclick="Play('partie_2','partie_1', '1100', '...');"></a>
+ 
+    </div>
+    <div id="partie_2" class="display_none">
+    <a><img onclick="refresh();" class="bouton_restart" src="image/restart.png"></a>
+    <a id="txt_won">Tu gagnes..</a>
+    <a><img id="troll_truestory" src="image/troll_truestory.png"></a>
+    <a id="txt_2">..le droit de recommencer </a>
+        </div>
+    
+    
+    
+             
+</div>
+
+<div id="game_over" class="display_none">
+        <a><img class="img_noir" src="image/noir.jpg"></a>
+        <a id="txt_over">GAME OVER</a>
+        <a><img id="img_game_over" src="image/game_over_troll.png"></a>
+        <a><img onclick="refresh();" class="bouton_restart" src="image/restart.png"></a>
+    
+</div>
+        
+<div id="restart_demande" class="display_none">
+    <a id="recommencer">Voulez-vous vraiment recommencer ?</a>
+    <a><input type="button" class="bouton_recommencer" id="recommencer_oui" onclick="yes();" value="OUI"></a>
+    <a><input type="button" class="bouton_recommencer"  id="recommencer_non" onclick="no();" value="NON"></a>
+    </div>
+    
+    </body>
+</html>

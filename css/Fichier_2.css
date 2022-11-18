@@ -1,0 +1,668 @@
+
+body{
+background-color:bisque;
+margin: 0;
+padding: 0;
+font-family: Georgia, sans-serif;
+font-style: italic;
+
+}
+
+.display_none{
+display: none;
+}
+.display_initial{
+display: initial;
+}
+
+
+#header{
+background-color: midnightblue;
+font-size: 15px;
+text-align: center;
+padding-bottom: 100px;
+padding-top: 100px;
+width: 100%;
+}
+
+#icone_restart{
+width: 7%;
+float: left;
+margin-top: -1%;
+margin-left: 10px;
+cursor: pointer;
+}
+
+
+#restart_demande {
+margin-left: 10%;
+margin-top: 40%;
+border-radius: 3px;
+position: absolute;
+padding: 90px 90px 120px 90px;
+background-color: white;
+border: 3px black solid;
+
+}
+#recommencer{
+font-weight: bold;
+font-size: 35px;
+font-style: normal;
+}
+
+.bouton_recommencer{
+position: absolute;
+background-color: black; 
+color: black; 
+border: 3px solid white;
+color: white;
+padding: 10px 15px;
+text-align: center;
+text-decoration: none;
+font-size: 15px;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+cursor: pointer;
+font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+position: absolute;
+
+
+}
+
+.bouton_recommencer:hover{
+background-color: white;
+border: 3px solid black;
+color: black;
+
+
+}
+
+#recommencer_oui{
+margin-top: 20px;
+margin-left: 130px;
+font-size: 35px;
+}
+#recommencer_non{
+margin-left: 350px;
+margin-top: 20px;
+font-size: 35px;
+}
+
+#consigne{
+color: azure;
+font-size: 50px;
+position: center ;
+    
+}
+
+#bouton_help {
+	-moz-box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	background-color:#a73f2d;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:50px;
+	font-weight:bold;
+	padding:10px 82px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7a2a1d;
+    border: none;
+    margin-top: 120%;
+    margin-left: 200px;
+    position: absolute;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#bouton_help:hover{
+animation: none;
+}
+
+
+
+#bouton_help:hover {
+	background-color:#b34332;
+}
+
+#niveau{
+color: azure;
+font-size: 55px;
+float: right;
+
+}
+
+#bouton_play_1{
+text-align: center;
+margin-top: 40%;
+margin-left: 20%;
+float: left;
+cursor: pointer;
+position: absolute;
+
+
+}
+
+#menu_aide{
+position: absolute;
+margin-top:-200px;
+margin-left: 300px;
+
+}
+
+
+#txt_1{
+font-size : 60px;
+position: absolute;
+color: white;
+margin-top: -210%;
+font-weight:bold;
+margin-left: -5%;
+
+}
+
+#txt_2{
+font-size : 35px;
+position: absolute;
+color: white;
+margin-top: -180%;
+margin-left: -18%;
+text-align: center;
+}
+
+
+
+#txt_3{
+font-size : 40px;
+position: absolute;
+color: white;
+margin-top: -160%;
+margin-left: -10%;
+
+
+}
+
+#txt_4{
+font-size : 40px;
+position: absolute;
+color: white;
+margin-top: -25%;
+text-align: center;
+margin-left:-15%;
+
+
+}
+
+
+#img_regles{
+position: absolute;
+margin-top: -120%;
+margin-left: 5%;
+
+}
+
+#croix_blanche{
+position: absolute;
+margin-top: -210%;
+margin-left: 98%;
+cursor: pointer;
+}
+
+
+.img_noir{
+width: 150%;
+position: relative;
+margin-top: 60%;
+margin-left: -35%;
+
+}
+
+
+
+.bouton_nom{
+background-color: white; 
+color: black; 
+border: 3px solid midnightblue;
+color: black;
+padding: 40px 60px;
+text-align: center;
+text-decoration: none;
+font-size: 40px;
+margin: 8px 4px;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+cursor: pointer;
+font-family: Georgia, sans-serif;
+font-style: italic;
+border-radius: 5px;
+position: absolute;
+
+    
+}
+
+.bouton_nom:hover {
+background-color: midnightblue;
+color: white;
+}
+
+
+#bouton_1{
+margin-left: 5%;
+margin-top: 38%;
+
+}
+
+#bouton_2{
+margin-left: 50%;
+margin-top: 38%;
+}
+
+#bouton_3{
+margin-left: 50%;
+margin-top: 75%;
+    
+}
+
+#bouton_4{
+margin-left: 5%;
+margin-top: 75%;
+}
+
+#Troll_1{
+
+}
+
+#troll1{
+width: 70%;
+height: auto;
+margin-left: 20%;
+margin-top: 50%;
+position: absolute;
+
+}
+
+
+.commentaire{
+font-size: 100px;
+margin-left: 20%;
+position: absolute;
+margin-top: 10%;
+text-align: center;
+
+
+}
+.Fleche{
+width: 30%;
+height:auto;
+cursor: pointer;
+position: absolute;
+margin-left: 65%;
+margin-top: 120%;
+    
+}
+
+
+#Troll_ba_dum_tsss{
+width:80%;
+height:auto;
+position: absolute;
+margin-left: 10%; 
+margin-top: 30%;
+}
+
+
+#image_charlie{
+width: 100%;
+height: auto;
+position: absolute;
+margin-top: 33%;
+}
+
+#charlie_bonhomme{
+position: absolute;
+margin-top: 200%;
+margin-left: 50%;
+cursor: pointer;
+}
+
+#image_bleu{
+width: 70%;
+position: absolute;
+margin-left: 10%;
+margin-top: 45%;
+}
+#troll_refl{
+    position: absolute;
+    margin-left: 33%;
+    margin-top: 60%;
+}
+
+
+#troll_ordinateur_img{
+position: absolute;
+width: 50%;
+margin-top: 50%;
+margin-left: 25%;
+}
+
+#troll3{
+width:50%;
+height:auto;
+position: absolute;
+margin-left: 20%;
+margin-top: 50%;
+
+}
+
+#roumanie_1{
+position: absolute;
+margin-top: 30%;
+margin-left: 33%;
+cursor: pointer;
+}
+
+#roumanie_2{
+position: absolute;
+margin-top: 90%;
+margin-left: 33%;
+cursor: pointer;
+
+}
+
+#troll_mexicain{
+position: absolute;
+margin-left: 20%;
+margin-top: 50%;
+}
+
+#image_japon{
+position: absolute;
+margin-top: 50%;
+width: 60%;
+margin-left: 20%;
+}
+
+#img_pain{
+position: absolute;
+width: 70%;
+margin-top: 65%;
+margin-left: 15%;
+}
+
+#troll_langue{
+width: 40%;
+height: auto;
+position: absolute;
+margin-top: 40%;
+margin-left: 10%;
+}
+
+
+
+#trollmdr{
+width: 60%;
+height: auto;
+position: absolute;
+margin-top: 50%;
+margin-left: 25%;
+}
+
+#inconnus{
+width: 30%;
+height: auto;
+position: absolute;
+margin-top: 60%;
+margin-left: 30%;
+}
+
+#feuille{
+width: 300px;
+margin-left: 30%;
+margin-top: 110%;
+position: absolute;
+}
+.boutonnom{
+
+font-size: 70px;
+width: 800px;
+padding-bottom:50px;
+padding-top:50px;
+margin-left: 70px;
+margin-top: 70px;
+
+   
+}
+#piege{
+    position: absolute;
+    width: 10%;
+    margin-top: 35%;
+}
+
+#drap1{
+    position: absolute;
+    width: 35%;
+    margin-left: 13%;
+    margin-top: 30%;
+}
+#drap2{
+    position: absolute;
+    width: 35%;
+    margin-left: 13%;
+    margin-top: 80%;
+}
+#drap3{
+    position: absolute;
+    width: 35%;
+    margin-left: 55%;
+    margin-top: 80%;
+}
+#drap4{
+    position: absolute;
+    width: 35%;
+    margin-left: 55%;
+    margin-top: 30%;
+}
+
+
+
+#click{
+position: absolute;
+}
+
+
+.bouton_compteur{
+
+-webkit-border-radius: 60;
+ -moz-border-radius: 60;
+border-radius: 60px;
+font-family: Georgia;
+color: #ffffff;
+font-size: 170px;
+background: #000000;
+text-decoration: none;
+border: none;
+position: absolute;
+    
+}
+
+#bouton_plus{
+margin-top: 80%;
+margin-left: 15%;
+padding: 8px 60px 30px 60px;
+}
+
+
+#bouton_moins{
+margin-top: 19%;
+margin-left: 79%;
+padding: 8px 84px 30px 84px;
+}
+
+
+#champ_texte{
+width: 800px;
+height: 90px;
+margin-top: 50%;
+margin-left: 10%;
+border-color: darkgray;
+border-top: none;
+border-right: none;
+border-left:none;
+background-color: bisque;
+font-size: 50px;
+text-align: center;
+
+}
+
+
+#champ_texte:focus{
+border-color: blue;
+outline: none;
+}
+
+
+
+#bouton_envoyer{
+background-color: black; 
+color: black; 
+border: 3px solid white;
+color: white;
+padding: 30px 45px;
+text-align: center;
+text-decoration: none;
+font-size: 45px;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+cursor: pointer;
+font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+position: absolute;
+margin-left: 43%;
+margin-top: 2%;
+
+
+    
+}
+
+#bouton_envoyer:hover {
+background-color: white;
+border: 3px solid black;
+color: black;
+border-radius: 2px;
+}
+
+#bouton_finish{
+width:300px;
+height:300px;
+background:#cc0000;
+border-radius: 70%;
+border: 8px solid, #cc0000;
+color:#fff;
+position: absolute;
+font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+cursor: pointer;
+margin-top: 40%;
+margin-left: 43%;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+font-size: 40px;
+
+}
+#bouton_finish:hover{
+border-color: #cc0000;
+background-color: white;
+color: black;
+
+}
+
+#menu_won{
+position: absolute;
+margin-top:-200px;
+margin-left: 300px;
+
+
+}
+
+#txt_won{
+font-size : 60px;
+position: absolute;
+color: white;
+margin-top: -200%;
+font-weight:bold;
+
+}
+
+#img_pleure{
+position: absolute;
+width: 110%;
+margin-top : -145%;
+margin-left: -10%;
+}
+
+#cadeau{
+position: absolute;
+width: 25%;
+margin-left: 30%;
+margin-top: -40%;
+cursor: pointer;
+animation: shake 0.5s;
+animation-iteration-count: infinite;
+}
+
+#cadeau:hover{
+animation: none;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.bouton_restart{
+position: absolute;
+margin-left: 20%;
+margin-top: -40%;
+width: 30%;
+cursor: pointer;
+}
+
+#troll_truestory{
+position: absolute;
+width: 120%;
+margin-top: -163%;
+margin-left: -20%
+
+}
+
+#game_over{
+position: absolute;
+margin-left: 33%;
+
+
+}
+#txt_over{
+font-size : 60px;
+position: absolute;
+color: white;
+margin-top: -200%;
+font-weight:bold;
+}
+
+#img_game_over{
+position: absolute;
+width: 100%;
+margin-top : -150%;
+
+}
+
+
